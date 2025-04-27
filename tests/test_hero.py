@@ -1,10 +1,12 @@
-import pytest
+import allure
 
-from API.api import Give_options, Check
+from utils.api.apy import Check
+from utils.load.set_options import Find_hero
 
 
-
+@allure.feature("Hero")
+@allure.description("Api")
 def test_hero():
-    Give_options.hight()
-    Check.check_hero()
+    Find_hero.find_hero()
+    Check.hero()
 
