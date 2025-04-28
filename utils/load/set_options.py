@@ -1,6 +1,5 @@
 import requests
 import json
-import allure
 
 api_url = 'https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/all.json'
 
@@ -49,10 +48,12 @@ def search_hight(api_data):
                 name = with_key(hero, 'name')
     list_hero_dict.append(name)
 
-    print(*list_hero_dict)
+
+    print(f'Cамый высокий герой по заданым входным данным: {''.join(list_hero_dict)}!')
     return ''.join(list_hero_dict)
 
 
 class Find_hero:
+
     def find_hero():
         search_hight(api_data)

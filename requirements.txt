@@ -1,4 +1,3 @@
-selene
 pytest
 requests
 allure-pytest
