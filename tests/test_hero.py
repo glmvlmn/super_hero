@@ -1,6 +1,6 @@
 import allure
 
-from utils.api.apy import Check
+from utils.api.api import Check
 from utils.load.set_options import Find_hero
 
 
